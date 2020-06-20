@@ -7,8 +7,8 @@ ENV SPHINX_VERSION 3.2.1-f152e0b
 ENV PATH "${PATH}:/opt/sphinx/bin"
 
 # install dependencies
-RUN apk add --no-cache mariadb-connector-c-dev \
-	postgresql-dev \
+RUN apk add --no-cache mariadb-connector-c \
+	postgresql-libs \
 	curl && \
     mkdir -pv /opt/sphinx/log /opt/sphinx/index && \
     curl -SL http://sphinxsearch.com/files/sphinx-${SPHINX_VERSION}-linux-amd64-musl.tar.gz | \
