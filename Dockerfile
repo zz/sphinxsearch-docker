@@ -3,7 +3,7 @@
 FROM alpine:3.12
 
 # https://sphinxsearch.com/blog/
-ENV SPHINX_VERSION 3.2.1-f152e0b
+ENV SPHINX_VERSION 3.4.1-efbcc65
 ENV PATH "${PATH}:/opt/sphinx/bin"
 
 # install dependencies
